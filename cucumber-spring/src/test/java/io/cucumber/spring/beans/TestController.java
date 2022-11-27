@@ -1,19 +1,15 @@
 package io.cucumber.spring.beans;
 
-import org.springframework.stereotype.Component;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 
-@Component
-@RequestMapping(TestController.BASE_URL)
+@RestController
 public class TestController {
 
-    public static final String BASE_URL = "/test";
-
     @ResponseBody
-    @RequestMapping(method = RequestMethod.GET)
-    public String test() {
+    @GetMapping
+    public String getTest() {
         return "ok";
     }
 

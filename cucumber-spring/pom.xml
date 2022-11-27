@@ -14,7 +14,7 @@
     <properties>
         <apiguardian-api.version>1.1.2</apiguardian-api.version>
         <hamcrest.version>2.2</hamcrest.version>
-        <javax.servlet-api.version>4.0.1</javax.servlet-api.version>
+        <jakarta.servlet-api.version>6.0.0</jakarta.servlet-api.version>
         <junit-jupiter.version>5.9.1</junit-jupiter.version>
         <spring.version>6.0.2</spring.version>
         <project.Automatic-Module-Name>io.cucumber.spring</project.Automatic-Module-Name>
@@ -78,9 +78,9 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>javax.servlet-api</artifactId>
-            <version>${javax.servlet-api.version}</version>
+            <groupId>jakarta.servlet</groupId>
+            <artifactId>jakarta.servlet-api</artifactId>
+            <version>${jakarta.servlet-api.version}</version>
             <scope>test</scope>
         </dependency>
 
